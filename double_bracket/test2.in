@@ -1,0 +1,38 @@
+# Test 2 : Double Bracket, A perd son 1er match mais gagne le tournoi par le tableau des perdants
+# -> la grande finale doit etre rejouee (match decisif)
+Joueur:A
+Joueur:B
+Joueur:C
+Joueur:D
+# Match 1 A-B : B gagne 2-0
+Action:1
+Action:2
+Action:0
+# Match 2 C-D : C gagne 2-0
+Action:0
+Action:0
+Action:2
+# Match 3 (finale des gagnants) B-C : C gagne 2-0
+Action:1
+Action:2
+Action:0
+# Match 4 (perdants) A-D : A gagne 2-0 -> D 4e
+Action:0
+Action:0
+Action:2
+# Match 5 (perdants) B-A : A gagne 2-0 -> B 3e
+Action:1
+Action:2
+Action:0
+# Match 6 (grande finale) C-A : A gagne 2-0 (egalite au PFC) -> C a perdu 1 fois, on rejoue
+Action:1
+Action:1
+Action:1
+Action:2
+Action:0
+# Match 7 (match decisif) C-A : A gagne 2-1
+Action:1
+Action:1
+Action:0
+Action:3
+Action:4

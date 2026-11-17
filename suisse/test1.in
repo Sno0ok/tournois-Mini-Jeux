@@ -1,0 +1,31 @@
+# Test 1 : Systeme Suisse, 4 joueurs -> 2 rondes
+# Manche 1 pile ou face : 0 = le 1er joueur gagne, 1 = le 2e
+# Manche 2 pierre-feuille-ciseaux : coup du 1er puis du 2e (0 pierre, 1 feuille, 2 ciseaux)
+# Manche 3 des : de du 1er puis du 2e (1 a 6)
+Joueur:A
+Joueur:B
+Joueur:C
+Joueur:D
+# Ronde 1 (ordre d inscription) : A-B puis C-D
+# A-B : A gagne 2-0
+Action:0
+Action:0
+Action:2
+# C-D : D gagne 2-1
+Action:1
+Action:1
+Action:0
+Action:2
+Action:5
+# Classement apres ronde 1 : A (1 v, 2 m), D (1 v, 2 m), C (0 v, 1 m), B (0 v, 0 m)
+# Ronde 2 : A-D puis C-B
+# A-D : D gagne 2-0
+Action:1
+Action:2
+Action:0
+# C-B : C gagne 2-1
+Action:0
+Action:0
+Action:1
+Action:6
+Action:1

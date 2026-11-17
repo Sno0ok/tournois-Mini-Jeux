@@ -1,0 +1,36 @@
+# Test 1 : Double Bracket, 4 joueurs, la grande finale est gagnée par le vainqueur du tableau des gagnants
+# Manche 1 pile ou face : 0 = le 1er joueur gagne, 1 = le 2e
+# Manche 2 pierre-feuille-ciseaux : coup du 1er puis du 2e (0 pierre, 1 feuille, 2 ciseaux)
+# Manche 3 des : de du 1er puis du 2e (1 a 6)
+Joueur:A
+Joueur:B
+Joueur:C
+Joueur:D
+# Match 1 A-B : A gagne 2-0
+Action:0
+Action:0
+Action:2
+# Match 2 C-D : D gagne 2-1
+Action:1
+Action:1
+Action:0
+Action:2
+Action:5
+# Match 3 (finale des gagnants) A-D : A gagne 2-0
+Action:0
+Action:1
+Action:0
+# Match 4 (perdants) B-C : C gagne 2-0 -> B 4e
+Action:1
+Action:2
+Action:0
+# Match 5 (perdants) D-C : D gagne 2-0 -> C 3e
+Action:0
+Action:0
+Action:2
+# Match 6 (grande finale) A-D : A gagne 2-1
+Action:0
+Action:0
+Action:1
+Action:6
+Action:1

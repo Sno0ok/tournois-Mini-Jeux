@@ -1,0 +1,40 @@
+# Test 2 : Systeme Suisse, 5 joueurs (impair) -> 3 rondes, un joueur exempte par ronde
+# On verifie aussi qu on evite une revanche (ronde 3 : C ne rejoue pas D)
+Joueur:A
+Joueur:B
+Joueur:C
+Joueur:D
+Joueur:E
+# Ronde 1 : E exempte. A-B puis C-D
+# A-B : A gagne 2-0
+Action:0
+Action:0
+Action:2
+# C-D : C gagne 2-1
+Action:0
+Action:0
+Action:1
+Action:6
+Action:1
+# Classement : A, C, E, D, B -> ronde 2 : B exempte. A-C puis E-D
+# A-C : C gagne 2-0
+Action:1
+Action:2
+Action:0
+# E-D : D gagne 2-1
+Action:1
+Action:1
+Action:0
+Action:1
+Action:6
+# Classement : C, D, A, E, B -> ronde 3 : A exempte. C-E (C a deja joue D) puis D-B
+# C-E : E gagne 2-1
+Action:1
+Action:1
+Action:0
+Action:1
+Action:6
+# D-B : D gagne 2-0
+Action:0
+Action:0
+Action:2

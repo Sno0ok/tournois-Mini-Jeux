@@ -1,0 +1,42 @@
+# Test 1 : 4 joueurs, Round Robin en BO3
+# Manche 1 pile ou face : 0 = le 1er joueur gagne, 1 = le 2e
+# Manche 2 pierre-feuille-ciseaux : coup du 1er puis du 2e (0 pierre, 1 feuille, 2 ciseaux)
+# Manche 3 des : de du 1er puis du 2e (1 a 6)
+Joueur:A
+Joueur:B
+Joueur:C
+Joueur:D
+# A-B : A gagne 2-0
+Action:0
+Action:0
+Action:2
+# A-C : A gagne 2-1 (egalite au PFC puis aux des)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:1
+Action:4
+Action:4
+Action:5
+Action:2
+# A-D : D gagne 2-0
+Action:1
+Action:2
+Action:0
+# B-C : C gagne 2-0
+Action:1
+Action:1
+Action:2
+# B-D : B gagne 2-0
+Action:0
+Action:1
+Action:0
+# C-D : C gagne 2-1 (egalite au PFC)
+Action:0
+Action:2
+Action:2
+Action:2
+Action:0
+Action:3
+Action:1
